@@ -1,8 +1,9 @@
 package materia.models;
 
 public class Node {
-    private int value;
-    private Node izquierda;
+    private int value; //cada nodo tiene un valor
+    //en el arbol binario, cada nodo puede tener un maximo de dos hijos
+    private Node izquierda; 
     private Node derecha;
 
     public Node(int value) {
@@ -11,6 +12,7 @@ public class Node {
         this.derecha = null;
     }
 
+    //getters y setters
     public int getValue() {
         return value;
     }
@@ -37,7 +39,7 @@ public class Node {
 
     @Override
     public String toString() {
-        return "Node [valor=" + value + "]";
+        return "Node valor=" + value;
     }
     
 

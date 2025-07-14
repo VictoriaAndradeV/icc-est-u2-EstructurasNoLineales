@@ -16,5 +16,12 @@ public class App {
         arbolBinario.insert(19);
 
         arbolBinario.imprimirArbol();
+
+        int valorBuscado = 23;
+        if(arbolBinario.buscar(valorBuscado)== true) {
+            System.out.println("El valor " + valorBuscado + " se encuentra en el arbol.");
+        }else{
+            System.out.println("El valor " + valorBuscado + " no se encuentra en el arbol.");
+        }
     }
 }
